@@ -19,10 +19,16 @@
    $`N(t) = (879)e^{(48.942054)}`$
 
    $`N(t) = 1.582  \times 10^{24}`$
-
    **Assuming logistic growth**: $`N(t) = K + 0t `$. This is therefore equivalent to the carrying capacity, K. 
 
    $`N(t) = 6 \times 10^{10} `$
 
    Under exponential growth, there is more rapid and extreme increase of the population size, and there is no carrying capacity that limits the population.
+
+3) Creating a graph that compares the logistic and exponential growth, using the parameters that I measured.
+
+   The file containing the information for this code is listed in the repository under: **exponential_logistic_comparison.R**
+      
+   ![image](https://github.com/user-attachments/assets/106272d0-9276-4d57-8346-4e50e535030a)
+
    
