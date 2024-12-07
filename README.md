@@ -12,14 +12,18 @@
 
 2) I will now use my estimates of N0 and r to calculate the size of the population at t = 4980 minutes, assuming an exponential population growth.
 
-   Exponential population growth equation: N(t) = N0e^rt, where N(t) is the population size at time, t and N0 is the original population size
+   **Exponential population growth equation**: N(t) = N0e^rt, where N(t) is the population size at time, t and N0 is the original population size
 
    N(t) = (879)e^(0.0100086)(4890)
+
    N(t) = (879)e^(48.942054)
+
    N(t) = 1.582e+24
 
-   Logistic growth equation: N(t) = K + 0t. This is therefore equivalent to the carrying capacity, K. 
+
+   **Logistic growth equation**: N(t) = K + 0t. This is therefore equivalent to the carrying capacity, K. 
 
    N(t) = 6e+10
 
    Under exponential growth, there is more rapid and extreme increase of the population size, and there is no carrying capacity that limits the population.
+   
