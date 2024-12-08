@@ -1,21 +1,33 @@
-MIT License
+1) During this analysis, we were trying to describe the logistic growth of a microbial population using a differential equation. This differential equation allows for us to model the rate of change of population size over time, compared to the initial size of the population. For this analysis, I used the progamme 'Posit Cloud' to retrieve data from the Internet, and to write and execute the code.
 
-Copyright (c) 2024 Candidate1072313
+   I used the data from the file **'experiment.csv'**. This data generates a graph for which we can estimate the initial population size (N0), the rate of population growth (r), and the carrying capacity of the environment (K). **My estimates for $`N_0`$, r and K are as follows:**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+   $`N_0 = 879 `$
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+   $`r = 0.0100086 `$
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+   $`K = 6 \times 10^{10} `$
+
+   The results of this experiment show a classic **logistic growth model**, with the population showing steady exponential growth until reaching the carrying capacity of the environment, and levelling off to a steady population size.
+
+2) I will now use my estimates of $`N_0`$ and r to calculate the size of the population at t = 4980 minutes , comparing the results for an exponential and logistic growth equation
+
+   **Assuming exponential population growth**: $`N(t) = N0e^{rt} `$, where $`N(t)`$ is the population size at time, t and $`N_0`$ is the original population size 
+
+   $`N(t) = (879)e^{(0.0100086)(4890)}`$
+
+   $`N(t) = (879)e^{(48.942054)}`$
+
+   $`N(t) = 1.582  \times 10^{24}`$
+
+   **Assuming logistic growth**: $`N(t) = K + 0t `$. This is therefore equivalent to the carrying capacity, K. 
+
+   $`N(t) = 6 \times 10^{10} `$
+
+   Under exponential growth, there is more rapid and extreme increase of the population size, and there is no carrying capacity that limits the population.
+
+4) Creating a graph that compares the logistic and exponential growth, using the parameters that I measured.
+
+   The file containing the information for this code is listed in the repository under: **exponential_logistic_comparison.R**
+      
+   ![image](https://github.com/user-attachments/assets/106272d0-9276-4d57-8346-4e50e535030a)
