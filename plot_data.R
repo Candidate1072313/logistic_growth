@@ -1,26 +1,19 @@
 #Script to plot the logistic growth data
 
-growth_data <- read.csv("???")
-
-install.packages("ggplot2")
+#Installing packages and opening data
+install.packages("ggplot2") ##ggplot2 is graphing software
 library(ggplot2)
+growth_data <- read.csv("experiment.csv") #Opening data
 
-ggplot(aes(t,N), data = ???) +
-  
+#Generating a model of the growth of the population
+ggplot(aes(t,N), data = growth_data) +
   geom_point() +
-  
-  xlab("t") +
-  
-  ylab("y") +
-  
-  theme_bw()
+  labs(x = "Time, t (minutes)", y = "Population Growth (log10N)") +
+  theme_minimal()
 
-ggplot(aes(t,???), data = growth_data) +
-  
+#Logarithmic transform of data
+ggplot(aes(t,N), data = growth_data) +
   geom_point() +
-  
-  xlab("t") +
-  
-  ylab("y") +
-  
-  scale_y_continuous(trans='log10')
+  labs(x = "Time, t (minutes)", y = "Population Growth (log10N)") +
+  scale_y_continuous(trans='log10') +
+  theme_minimal()
