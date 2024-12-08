@@ -31,5 +31,3 @@
    The file containing the information for this code is listed in the repository under: **exponential_logistic_comparison.R**
       
    ![image](https://github.com/user-attachments/assets/106272d0-9276-4d57-8346-4e50e535030a)
-
-   
