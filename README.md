@@ -28,7 +28,7 @@
 
 4) Creating a graph that compares the logistic and exponential growth, using the parameters that I measured.
 
-   The file containing the information for this code is listed in the repository under: **exponential_logistic_comparison.R**
+   The file containing the information for this code is listed in the repository under: [**exponential_logistic_comparison.R**](https://github.com/Candidate1072313/logistic_growth/blob/main/exponential_logistic_comparison.R)
 
    The black dots show the actual growth of the population. The **red** line shows the **exponential** growth model. The **green** line shows the **logistic** growth model. We can see, the population follows a logistic growth model along the green line.
 
